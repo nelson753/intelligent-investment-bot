@@ -1,0 +1,82 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+gpu_env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# API Keys y Secrets
+.env
+*.key
+*.secret
+config/secrets.json
+
+# Datos sensibles
+*.csv
+*.xlsx
+historical_data/
+backtest_results/
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Modelos entrenados (pueden ser grandes)
+models/*.pkl
+models/*.joblib
+trading_models/
+*.h5
+
+# Session logs (pueden contener data sensible)
+*_session_*.json
+live_session_*.json
+paper_trading_session_*.json
+coinbase_safe_session_*.json
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Project specific
+trading_data/
+reportes_auto_debug/
+.cache_timestamps/
