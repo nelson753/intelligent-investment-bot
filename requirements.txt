@@ -1,0 +1,89 @@
+# 📦 Dependencias del Proyecto
+
+## Instalación Rápida
+
+```powershell
+pip install -r requirements.txt
+```
+
+## Lista de Dependencias
+
+```text
+# API de Exchanges
+requests>=2.31.0          # HTTP client para Coinbase API
+
+# Cálculos Numéricos
+numpy>=1.24.0             # Indicadores técnicos (RSI, MACD, EMA, ATR)
+
+# Dashboard Web (Opcional)
+flask>=2.3.0              # Web server para dashboard
+flask-cors>=4.0.0         # CORS para dashboard
+
+# Análisis de Datos (Opcional)
+pandas>=2.0.0             # Análisis de sesiones históricas
+matplotlib>=3.7.0         # Gráficos de rendimiento
+
+# Machine Learning (Futuro)
+# tensorflow>=2.13.0      # Para PPO agent (deshabilitado por ahora)
+# scikit-learn>=1.3.0     # Para features adicionales
+```
+
+## Instalación Manual
+
+### Dependencias Core (Requeridas)
+```powershell
+pip install requests numpy
+```
+
+### Dashboard (Opcional)
+```powershell
+pip install flask flask-cors
+```
+
+### Análisis Histórico (Opcional)
+```powershell
+pip install pandas matplotlib
+```
+
+## Verificación de Instalación
+
+```powershell
+python -c "import requests, numpy; print('✅ Dependencias core instaladas')"
+python -c "import flask; print('✅ Dashboard disponible')"
+python -c "import pandas, matplotlib; print('✅ Análisis disponible')"
+```
+
+## Versiones de Python Soportadas
+
+- **Python 3.8+** (Recomendado: 3.10 o 3.11)
+- **Windows, macOS, Linux**
+
+## Troubleshooting
+
+### Error: "No module named 'requests'"
+```powershell
+pip install requests
+```
+
+### Error: "No module named 'numpy'"
+```powershell
+pip install numpy
+```
+
+### Error con Flask en Windows
+```powershell
+pip install --upgrade flask flask-cors
+```
+
+## Entorno Virtual (Recomendado)
+
+```powershell
+# Crear entorno virtual
+python -m venv venv
+
+# Activar (Windows)
+.\venv\Scripts\Activate.ps1
+
+# Instalar dependencias
+pip install -r requirements.txt
+```

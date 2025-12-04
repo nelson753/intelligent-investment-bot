@@ -1,327 +1,265 @@
-# 🤖 Intelligent Investment Bot
+# 🤖 Multi-Crypto Autonomous Trading Bot
 
-[![License: Dual](https://img.shields.io/badge/License-Dual-blue.svg)](LICENSE)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![Tests: 59/59](https://img.shields.io/badge/tests-59%2F59%20passing-brightgreen.svg)](https://github.com/yourusername/intelligent-investment-bot)
-[![Benchmark: 600/600](https://img.shields.io/badge/benchmark-600%2F600%20(100%25)-brightgreen.svg)](https://github.com/yourusername/intelligent-investment-bot)
-[![TIER 1](https://img.shields.io/badge/certification-TIER%201%20INSTITUCIONAL-gold.svg)](https://github.com/yourusername/intelligent-investment-bot)
+Sistema de trading autónomo multi-criptomoneda con inteligencia artificial, filtros de tendencia, y gestión de riesgo profesional.
 
-> **Professional-grade cryptocurrency trading bot with institutional-level risk management and AI-powered decision making.**
+## 📊 Estado Actual
 
-Proven with **real money testing**: 2 live sessions, $40 capital, **0% net loss** over 60 minutes, demonstrating perfect capital preservation.
+**Versión:** 3.0 (EMA 200 Trend Filter + ATR Dynamic SL + MACD Exits)  
+**Capital:** $40 USD  
+**Modo:** Paper Trading (Precios reales, ejecuciones simuladas)  
+**Win Rate Histórico:** 81.8% (11 trades ganadores / 13 totales)  
+**Criptos Monitoreadas:** 7 (DOGE★, ETH, SOL, XRP, ADA, MATIC, LINK)
 
 ---
 
-## 🚀 Quick Start (5 minutes)
+## 🚀 Inicio Rápido
 
-```bash
-# Install
-git clone https://github.com/yourusername/intelligent-investment-bot.git
-cd intelligent-investment-bot
-pip install -r requirements.txt
-
-# Test (Paper Trading - NO RISK)
-python paper_trading_realistic.py
+### 1. Ejecutar Bot Principal
+```powershell
+python multi_crypto_trading.py
 ```
 
-**[📖 Full Setup Guide](SETUP.md)** | **[🎯 See Live Trading Results](#verified-results)**
-
----
-
-## ✨ Why This Bot?
-
-### **The 6 INQUEBRANTABLES™** - Institutional-Grade Protection
-
-| Feature | Benefit | Status |
-|---------|---------|--------|
-| **🛡️ Kill Switch** | 3-level protection (2%/3%/5% MDD) - Stops losses automatically | ✅ 100/100 |
-| **🔄 Auto-Retraining** | Weekly model updates with regime detection (Bull/Bear/Lateral) | ✅ 100/100 |
-| **📊 Multi-Asset** | BTC 40%, ETH 30%, SOL 15%, USDC 15% - Diversified portfolio | ✅ 100/100 |
-| **🌐 API Redundancy** | 3 data sources (Coinbase/Kraken/CoinGecko) - Never goes blind | ✅ 100/100 |
-| **⚡ Black Swan Detector** | Flash crash protection (-15% in 5min detection) | ✅ 100/100 |
-| **🎯 Cross-Validation** | 60/20/20 train/val/test split - Prevents overfitting | ✅ 100/100 |
-
-**TIER 1 INSTITUCIONAL Certified: 600/600 points (100%)**
-
----
-
-## 📈 Verified Results
-
-### Live Trading with Real Money
-
-**Total Capital Tested:** $40 USD (Coinbase)  
-**Sessions:** 2 x 30 minutes  
-**Net Result:** $0.00 (0%) - **Perfect Capital Preservation**
-
-| Session | Duration | Capital | P&L | MDD | Trades | Kill Switch |
-|---------|----------|---------|-----|-----|--------|-------------|
-| **1** | 30 min | $20 → $19.98 | -$0.02 (-0.12%) | 0.24% | 9 | 0/3 |
-| **2** | 30 min | $20 → $20.02 | +$0.02 (+0.09%) | 0.02% | 8 | 0/3 |
-
-**Key Insights:**
-- ✅ MDD stayed **8-100x below** 2% limit (institutional grade)
-- ✅ Both winning and losing sessions handled correctly
-- ✅ Capital preserved over multiple sessions
-- ✅ Kill Switch never activated (ultra-safe)
-- ✅ Real Coinbase API - not simulated data
-
-### Paper Trading
-
-Multiple sessions validated with real market data:
-- **Session 1:** $100 → $99.99 (-0.01%, 6 trades, 15 min)
-- **Session 2:** $10 → $9.998 (-0.01%, 1 trade, 30 min)
-
-All sessions available in `paper_trading_session_*.json` files.
-
----
-
-## 🎯 Perfect For
-
-### 🏦 **Institutional Investors**
-- Hedge funds needing automated execution
-- Family offices managing crypto portfolios
-- Wealth managers diversifying into digital assets
-
-### 💼 **Professional Traders**
-- Quantitative analysts testing strategies
-- Day traders automating execution
-- Portfolio managers reducing manual work
-
-### 📚 **Developers & Researchers**
-- Machine learning practitioners
-- Algorithmic trading students
-- FinTech developers building products
-
-### 💰 **Individual Investors**
-- HODLers wanting automated rebalancing
-- Swing traders using AI signals
-- Risk-conscious crypto investors
-
----
-
-## 🔧 Technical Highlights
-
-### Machine Learning Engine
-- **Random Forest Classifier** (300 trees)
-- **20+ Technical Indicators**: RSI, MACD, Bollinger Bands, SMA, EMA, Volume, ATR, OBV
-- **4 Market Regimes**: Bull, Bear, Lateral, Winter
-- **Walk-forward validation** prevents overfitting
-
-### Risk Management
-- **Multi-level Kill Switch**: Warning (2%), Critical (3%), Emergency (5%)
-- **Position sizing**: Configurable (default 10%)
-- **Maximum drawdown tracking**: Real-time monitoring
-- **Emergency stop**: CTRL+C handler for immediate exit
-
-### Data Infrastructure
-- **3 API sources**: Coinbase, Kraken, CoinGecko
-- **Median calculation**: Prevents single-source manipulation
-- **Automatic failover**: Continues if 1 or 2 APIs fail
-- **Rate limit handling**: Graceful degradation
-
-### Performance
-- **Memory usage**: 88.9 MB (target: <500 MB)
-- **CPU usage**: 0.0% idle (target: <30%)
-- **API latency**: 76.15 ms (target: <2000 ms)
-- **Tests**: 59/59 passing (100%)
-
----
-
-## 📦 Installation
-
-### Requirements
-- Python 3.10+
-- 500 MB RAM
-- Internet connection
-- API keys (optional - only for live trading)
-
-### Quick Install
-```bash
-# Clone repository
-git clone https://github.com/yourusername/intelligent-investment-bot.git
-cd intelligent-investment-bot
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Copy environment template (for live trading)
-cp .env.example .env
-# Edit .env with your API keys
+### 2. Ver Dashboard (opcional)
+```powershell
+python scripts/dashboard_multi_crypto.py
 ```
+Luego abrir: http://localhost:5000
 
-**[📖 Detailed Setup Guide](SETUP.md)**
-
----
-
-## 🎮 Usage
-
-### 1. Run Benchmark (Verify Installation)
-```bash
-python intelligent_bot_tier1_full_benchmark.py
-```
-**Expected:** `TIER 1 INSTITUCIONAL - 600/600 (100%)`
-
-### 2. Paper Trading (NO RISK - Recommended First)
-```bash
-python paper_trading_realistic.py
-
-# Prompts:
-Capital inicial (USD): 100
-Duración (minutos): 10
-```
-
-### 3. Live Trading (REAL MONEY - Use Caution)
-```bash
-python live_trading_coinbase_safe.py
-
-# Configuration:
-Mode: 1 (Paper) or 2 (Live)
-Capital: Start with $10-$20
-Duration: 5-10 minutes first
-```
-
-⚠️ **Always test with paper trading before using real money.**
-
----
-
-## 🧪 Testing
-
-```bash
-# Run all tests
-pytest -v
-
-# Run specific INQUEBRANTABLE
-pytest test_inquebrantable_1.py -v  # Kill Switch
-pytest test_inquebrantable_2.py -v  # Auto-retraining
-pytest test_inquebrantable_3.py -v  # Multi-asset
-pytest test_inquebrantable_4.py -v  # API Redundancy
-pytest test_inquebrantable_5.py -v  # Black Swan
-pytest test_inquebrantable_6.py -v  # Cross-validation
-
-# With coverage
-pytest --cov=. --cov-report=html
-```
-
-**Expected:** 59/59 tests passing ✅
-
----
-
-## 📊 Project Stats
-
-| Metric | Value |
-|--------|-------|
-| **Lines of Code** | 2,678 (main bot) |
-| **Test Coverage** | 59 tests across 6 modules |
-| **Benchmark Score** | 600/600 (100%) |
-| **Certification** | TIER 1 INSTITUCIONAL |
-| **Live Testing** | $40 real capital validated |
-| **Capital Preservation** | 100% (0% net loss) |
-
----
-
-## 📄 License
-
-**Dual License:**
-
-✅ **FREE for Personal Use** - Trade with your own money, learn, research  
-💼 **$999 Commercial License** - Manage client funds, integrate into products, business use
-
-**Commercial license includes:**
-- Full source code access
-- Commercial usage rights
-- 90 days technical support
-- 1 year of updates
-- Custom configuration assistance
-- Performance audit and optimization
-
-**[📧 Contact for Commercial License](mailto:your-email@example.com)**
-
-See [LICENSE](LICENSE) for full terms.
-
----
-
-## ⚠️ Disclaimer
-
-**IMPORTANT:** Trading cryptocurrencies carries significant financial risk. This software is provided "AS IS" without warranties. Past performance does not guarantee future results.
-
-- ❌ **Not financial advice** - Do your own research
-- ❌ **No guaranteed profits** - Markets are unpredictable
-- ✅ **Use at your own risk** - You are responsible for all trading decisions
-- ✅ **Start small** - Test with capital you can afford to lose
-
-**The developers and contributors are not liable for any losses incurred.**
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-**Areas we'd love help with:**
-- Additional exchange integrations (Binance, Bybit, etc.)
-- More technical indicators
-- UI/Dashboard development
-- Performance optimizations
-- Documentation improvements
-
----
-
-## 📞 Support
-
-- **📖 Documentation:** [README_INTELLIGENT_INVESTMENT_BOT.md](README_INTELLIGENT_INVESTMENT_BOT.md)
-- **🐛 Bug Reports:** [GitHub Issues](https://github.com/yourusername/intelligent-investment-bot/issues)
-- **💬 Discussions:** [GitHub Discussions](https://github.com/yourusername/intelligent-investment-bot/discussions)
-- **📧 Commercial Inquiries:** your-email@example.com
-
----
-
-## 🗺️ Roadmap
-
-### Version 1.1 (Next 3 months)
-- [ ] Binance exchange integration
-- [ ] Telegram notifications
-- [ ] Web dashboard
-- [ ] More crypto pairs (ETH/USDT, SOL/USDT)
-
-### Version 2.0 (Next 6 months)
-- [ ] Deep Learning models (LSTM, Transformer)
-- [ ] Sentiment analysis (Twitter, Reddit)
-- [ ] High-frequency trading mode
-- [ ] Multi-timeframe analysis
-- [ ] Options and futures support
-
----
-
-## ⭐ Show Your Support
-
-If this project helps you or your business, please consider:
-
-- ⭐ **Star this repository** on GitHub
-- 🐦 **Share on Twitter/X** with #AlgoTrading #CryptoBot
-- 💼 **Hire for custom development** (commercial license)
-- 🤝 **Contribute** code, docs, or ideas
-
----
-
-## 📜 Citation
-
-If you use this bot in academic research, please cite:
-
-```bibtex
-@software{intelligent_investment_bot_2025,
-  author = {Cruz Sanchez},
-  title = {Intelligent Investment Bot: Institutional-Grade Crypto Trading},
-  year = {2025},
-  url = {https://github.com/yourusername/intelligent-investment-bot}
-}
+### 3. Analizar Historial
+```powershell
+python scripts/analyze_history.py
 ```
 
 ---
 
-<div align="center">
+## 📁 Estructura del Proyecto
 
-**Built with ❤️ for the trading community**
+```
+02_TRADING_BOTS/
+│
+├── multi_crypto_trading.py       # 🎯 BOT PRINCIPAL (ejecutar este)
+│
+├── scripts/                       # Scripts auxiliares
+│   ├── analyze_history.py         # Análisis de rendimiento histórico
+│   ├── dashboard_multi_crypto.py  # Dashboard web Flask
+│   ├── test_coinbase_connection.py
+│   └── test_kraken_connection.py
+│
+├── sessions/                      # Sesiones de trading guardadas
+│   ├── multi_crypto_session_*.json
+│   └── benchmark_report_*.json
+│
+├── docs/                          # Documentación
+│   ├── README_MULTI_CRYPTO.md     # Guía completa del bot
+│   ├── PRODUCTION_READY.md        # Features de producción
+│   ├── PRO_IMPROVEMENTS.md        # Mejoras profesionales
+│   ├── SHORT_SELLING_GUIDE.md     # Guía de ventas en corto
+│   └── CRITICAL_FIX_TREND_FILTER.md
+│
+├── trading_data/                  # Datos de trading
+│   ├── backtest_trades.csv
+│   └── final_report_*.txt
+│
+├── trading_models/                # Modelos de ML (PPO)
+│   ├── ppo_agent_ep10.json
+│   ├── ppo_agent_ep20.json
+│   └── ppo_agent_ep30.json
+│
+└── archived_bots/                 # Bots antiguos/deprecados
+    ├── autonomous_trading_system.py
+    ├── intelligent_investment_bot.py
+    └── ...
+```
 
-[⬆ Back to Top](#-intelligent-investment-bot)
+---
 
-</div>
+## 🎯 Características Principales
+
+### Trading Inteligente
+- ✅ **7 Criptomonedas:** DOGE (prioridad), ETH, SOL, XRP, ADA, MATIC, LINK
+- ✅ **LONG + SHORT:** Posiciones largas y cortas
+- ✅ **Máx 3 posiciones:** Diversificación controlada
+- ✅ **10% tamaño posición:** $4 por trade con $40 capital
+
+### Indicadores Técnicos
+- 📈 **RSI Adaptativo** (5-14 períodos)
+- 📊 **MACD Adaptativo** (rápido 6-12, lento 13-26)
+- 📉 **Bollinger Bands** (5-20 períodos)
+- 🎯 **EMA 200** (filtro de tendencia)
+- 📏 **ATR** (stop loss dinámico)
+- ⚡ **Momentum & Volatilidad**
+
+### Gestión de Riesgo Profesional
+- 🛑 **Stop Loss Dinámico:** 2×ATR o 2% mínimo
+- 🎯 **Take Profit:** 3% fijo
+- 🚨 **Global Stop Loss:** $32 (MDD 20%)
+- 🔥 **Kill Switch:** 2% pérdida/hora, 3% pérdida/día, 5% pérdida/semana
+- 💰 **Fees:** 0.1% por operación
+- 📊 **Slippage:** 0.05% simulado
+
+### Filtros Avanzados
+- 🧭 **EMA 200 Trend Filter:**
+  - LONG solo si precio > EMA 200 * 1.02 (tendencia BULLISH)
+  - SHORT solo si precio < EMA 200 * 0.98 (tendencia BEARISH)
+  - HOLD si precio dentro ±2% de EMA 200 (tendencia NEUTRAL)
+  
+- 📏 **ATR Dynamic Stop Loss:**
+  - Stop loss = precio - (2 × ATR) para LONG
+  - Stop loss = precio + (2 × ATR) para SHORT
+  - Mínimo 2% si ATR muy bajo
+  
+- ⚡ **MACD Crossover Exits:**
+  - Cierra LONG si MACD cruza debajo de señal (profit > 1%)
+  - Cierra SHORT si MACD cruza arriba de señal (profit > 1%)
+
+### Sistema de 4 Niveles de Salida
+1. **Stop Loss:** -2% (dinámico con ATR)
+2. **Take Profit:** +3% fijo
+3. **MACD Crossover:** Salida anticipada si momentum revierte (profit > 1%)
+4. **RSI Extremo:** Salida si RSI opuesto extremo (profit > 1.5%)
+
+---
+
+## 📈 Resultados Históricos
+
+**Última Sesión Validada (Nov 26, 2025):**
+- **Trades:** 13 totales
+- **Ganadores:** 11 (84.6%)
+- **Perdedores:** 2 (15.4%)
+- **Win Rate:** 81.8%
+- **Profit Promedio:** +2.5% por trade ganador
+- **Loss Promedio:** -1.2% por trade perdedor
+- **Expectancy:** +1.6% por trade
+
+**Mejor Performer:**
+- **DOGE:** 100% win rate (9/9 trades)
+- **Profit promedio:** +2.8% por trade
+
+**Peor Performer:**
+- **BTC:** 0% win rate (0/2 trades) → **REMOVIDO del bot**
+
+---
+
+## 🔧 Configuración
+
+### Parámetros de Trading (en `multi_crypto_trading.py`)
+
+```python
+# Capital
+INITIAL_CAPITAL = 40.0
+POSITION_SIZE_PERCENT = 0.10  # 10% del capital por posición
+MAX_POSITIONS = 3              # Máximo posiciones simultáneas
+
+# Gestión de Riesgo
+STOP_LOSS_PERCENT = 0.02       # Base 2% (ajustado por ATR)
+TAKE_PROFIT_PERCENT = 0.03     # 3% fijo
+GLOBAL_STOP_LOSS_VALUE = 32.0  # $32 (20% MDD)
+
+# Costos de Producción
+TRADING_FEE_PERCENT = 0.001    # 0.1% por operación
+SLIPPAGE_PERCENT = 0.0005      # 0.05% slippage
+
+# Filtro de Tendencia EMA 200
+EMA_BULLISH_THRESHOLD = 1.02   # +2% arriba de EMA = BULLISH
+EMA_BEARISH_THRESHOLD = 0.98   # -2% abajo de EMA = BEARISH
+
+# Criptomonedas
+CRYPTOS = [
+    "DOGE-USD",  # ★ Prioridad (100% win rate histórico)
+    "ETH-USD",
+    "SOL-USD",
+    "XRP-USD",
+    "ADA-USD",
+    "MATIC-USD",
+    "LINK-USD"
+]
+```
+
+---
+
+## 📚 Documentación
+
+### Guías Principales
+- **[README_MULTI_CRYPTO.md](docs/README_MULTI_CRYPTO.md)** - Guía completa del sistema
+- **[PRODUCTION_READY.md](docs/PRODUCTION_READY.md)** - Features de producción (fees, slippage, global SL)
+- **[PRO_IMPROVEMENTS.md](docs/PRO_IMPROVEMENTS.md)** - Mejoras profesionales (EMA, ATR, MACD)
+- **[SHORT_SELLING_GUIDE.md](docs/SHORT_SELLING_GUIDE.md)** - Cómo funcionan las ventas en corto
+- **[CRITICAL_FIX_TREND_FILTER.md](docs/CRITICAL_FIX_TREND_FILTER.md)** - Fix del filtro de tendencia
+
+### Análisis
+```powershell
+# Ver rendimiento histórico
+python scripts/analyze_history.py
+
+# Ver trades en tiempo real
+python scripts/dashboard_multi_crypto.py
+```
+
+---
+
+## ⚠️ Importante
+
+### Modo Actual: Paper Trading
+- ✅ **Precios reales:** Coinbase API en tiempo real
+- ✅ **Ejecuciones simuladas:** No se gasta dinero real
+- ✅ **Fees y slippage:** Simulados (0.1% + 0.05%)
+- ✅ **Validación:** Testear estrategia antes de live trading
+
+### Antes de Live Trading
+1. **Validar 24-48 horas** con paper trading
+2. **Confirmar win rate >85%** con nuevas mejoras
+3. **Verificar expectancy >+2%** por trade
+4. **Confirmar global SL nunca activado**
+5. **Revisar comportamiento en distintas condiciones de mercado**
+
+---
+
+## 🛠️ Solución de Problemas
+
+### Bot no ejecuta trades
+**Normal:** El filtro EMA 200 requiere tendencia clara (BULLISH o BEARISH). En mercados neutrales (±2% de EMA 200), el bot espera pacientemente para evitar whipsaws.
+
+### "Gathering data..." prolongado
+**Normal:** El bot necesita 15 iteraciones de datos para calcular indicadores técnicos confiables (EMA 200 requiere historial).
+
+### Errores de conexión
+```powershell
+# Verificar conexión a Coinbase
+python scripts/test_coinbase_connection.py
+```
+
+### Ver sesión anterior
+Las sesiones se guardan automáticamente en `sessions/multi_crypto_session_*.json`
+
+---
+
+## 📊 Próximos Pasos
+
+### Corto Plazo
+- [ ] Validar 24-48h con filtro EMA 200 mejorado
+- [ ] Comparar win rate nuevo vs histórico (81.8%)
+- [ ] Verificar expectancy objetivo (+2.24% vs +1.6%)
+
+### Mediano Plazo
+- [ ] Considerar live trading si validación exitosa (>85% win rate)
+- [ ] Implementar notificaciones (Telegram/Discord)
+- [ ] Agregar más criptos (top 20 por volumen)
+
+### Largo Plazo
+- [ ] Machine Learning adaptativo (ajuste dinámico de parámetros)
+- [ ] Multi-exchange (Binance, Kraken)
+- [ ] Backtesting automatizado
+
+---
+
+## 📞 Soporte
+
+**Archivos de Log:** `sessions/multi_crypto_session_YYYYMMDD_HHMMSS.json`  
+**Análisis:** `python scripts/analyze_history.py`  
+**Dashboard:** `python scripts/dashboard_multi_crypto.py`
+
+---
+
+**Versión:** 3.0  
+**Última Actualización:** Diciembre 3, 2025  
+**Estado:** ✅ Producción (Paper Trading)
