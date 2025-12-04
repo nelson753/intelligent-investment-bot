@@ -1,6 +1,24 @@
-# 🤖 Multi-Crypto Autonomous Trading Bot
+# 🤖 Intelligent Investment Bot - 100% FREE & Open Source!
 
-Sistema de trading autónomo multi-criptomoneda con inteligencia artificial, filtros de tendencia, y gestión de riesgo profesional.
+**Multi-Crypto Autonomous Trading System** with AI, trend filters, and institutional-grade risk management.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Win Rate: 81.8%](https://img.shields.io/badge/win_rate-81.8%25-brightgreen.svg)](sessions/)
+[![Version: 3.0](https://img.shields.io/badge/version-3.0-blue.svg)](CHANGELOG.md)
+
+> Professional-grade cryptocurrency trading bot that achieved **81.8% win rate** in real market conditions.  
+> Live tested with **$40 real capital**, **+1.6% expectancy** per trade.
+
+---
+
+## 🎉 HUGE UPDATE: Now 100% FREE & Open Source!
+
+**What changed:** Transformed from $999 paid product into a FREE open-source project!
+
+**Before:** $999 commercial license | **Now:** 100% FREE with MIT License
+
+---
 
 ## 📊 Estado Actual
 
@@ -252,14 +270,66 @@ Las sesiones se guardan automáticamente en `sessions/multi_crypto_session_*.jso
 
 ---
 
+## 💰 Support This FREE Project (Optional)
+
+Love this bot? Help keep it free and improving!
+
+### ☕ One-Time Donation
+**Buy me a coffee** - Any amount ($5, $10, $25+)
+- Keeps the project FREE and open source
+- Funds new features (Binance, Kraken, more cryptos)
+- Supports cloud version development
+
+**Donate:** https://ko-fi.com/nelson753
+
+### 💎 Monthly Sponsorship (GitHub Sponsors)
+- **🥉 Bronze ($10/mo)** - Your name in README + priority issues
+- **🥈 Silver ($25/mo)** - Bronze + monthly trading consultation (30 min)
+- **🥇 Gold ($50/mo)** - Silver + custom strategy requests + early access
+- **💎 Platinum ($100/mo)** - Gold + dedicated support + custom ML models
+
+**Become a Sponsor:** https://github.com/sponsors/nelson753
+
+---
+
+## 🚀 Premium Services (Optional)
+
+Want professional help?
+
+### Cloud Hosting (Coming Q2 2026 - Beta Waitlist)
+- **🆓 Free Tier:** 1 bot, paper trading, community support
+- **💼 Pro ($49/mo):** 3 bots, auto-trading, email alerts
+- **🏢 Team ($149/mo):** 10 bots, priority support, analytics
+- **🏛️ Enterprise (Custom):** Unlimited, SLA, white-label
+
+**Join Waitlist:** nelson.debugger@gmail.com
+
+### Professional Services
+- **Custom Strategy Development:** $500 - Build your unique trading algorithm
+- **Enterprise Integration:** $2,000+ - API integration, training, CI/CD
+- **Trading Training:** $150/hour - Learn algo trading from experts
+- **Performance Consulting:** $200/hour - Optimize win rate and expectancy
+
+**Request Quote:** nelson.debugger@gmail.com - 24h response
+
+---
+
 ## 📞 Soporte
 
 **Archivos de Log:** `sessions/multi_crypto_session_YYYYMMDD_HHMMSS.json`  
 **Análisis:** `python scripts/analyze_history.py`  
 **Dashboard:** `python scripts/dashboard_multi_crypto.py`
 
+### Contact
+- **Email:** nelson.debugger@gmail.com
+- **GitHub:** https://github.com/nelson753
+- **Ko-fi:** https://ko-fi.com/nelson753
+- **Sponsors:** https://github.com/sponsors/nelson753
+
 ---
 
 **Versión:** 3.0  
 **Última Actualización:** Diciembre 3, 2025  
 **Estado:** ✅ Producción (Paper Trading)
+
+⭐ **Star this repo if it helps you trade better!**
